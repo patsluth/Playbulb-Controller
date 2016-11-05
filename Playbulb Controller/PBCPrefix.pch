@@ -1,0 +1,38 @@
+//
+//  PBCPrefix.pch
+//  Playbulb Controller
+//
+//  Created by Pat Sluth on 2016-11-04.
+//  Copyright © 2016 Pat Sluth. All rights reserved.
+//
+
+#ifndef PBCPrefix_pch
+#define PBCPrefix_pch
+
+
+
+
+
+
+#ifdef DEBUG
+    #define NSLog(FORMAT, ...) fprintf(stderr,"%s:[%d]:\t\t%s\n", __FUNCTION__, __LINE__, [NSString stringWithFormat:FORMAT, ##__VA_ARGS__].UTF8String);
+#else
+    #define NSLog(...) {}
+#endif
+
+
+#define try @try {
+#define catch } @catch (NSException *exception) {
+#define finally } @finally {
+#define endtry }
+
+
+
+
+
+
+#endif /* PBCPrefix_pch */
+
+
+
+

@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E26DC381DCB7CA900419A2B /* PBCPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC371DCB7CA900419A2B /* PBCPeripheralManager.m */; };
+		2E26DC391DCB87ED00419A2B /* PBCPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC371DCB7CA900419A2B /* PBCPeripheralManager.m */; };
+		2E26DC401DCB8AB600419A2B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E26DC3E1DCB8AB600419A2B /* Interface.storyboard */; };
+		2E26DC421DCB8AB600419A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E26DC411DCB8AB600419A2B /* Assets.xcassets */; };
+		2E26DC491DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E26DC481DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E26DC4F1DCB8AB600419A2B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC4E1DCB8AB600419A2B /* InterfaceController.m */; };
+		2E26DC521DCB8AB600419A2B /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC511DCB8AB600419A2B /* ExtensionDelegate.m */; };
+		2E26DC541DCB8AB600419A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E26DC531DCB8AB600419A2B /* Assets.xcassets */; };
+		2E26DC581DCB8AB600419A2B /* Playbulb Controller Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E26DC3C1DCB8AB600419A2B /* Playbulb Controller Watch.app */; };
+		2E26DC641DCB92D300419A2B /* WatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC631DCB92D300419A2B /* WatchSessionManager.m */; };
+		2E26DC671DCB93F900419A2B /* WatchSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26DC661DCB93F900419A2B /* WatchSessionManager.m */; };
+		2E749DF61DC7840300DA140B /* CBPeripheral+SW.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E749DF51DC7840300DA140B /* CBPeripheral+SW.m */; };
+		2E749DF91DC7891300DA140B /* PBCColorSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E749DF81DC7891300DA140B /* PBCColorSelectionViewController.m */; };
+		2E749DFC1DC78C4A00DA140B /* PBCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E749DFB1DC78C4A00DA140B /* PBCColor.m */; };
+		2EC7F23C1D9F36D100744F84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7F23B1D9F36D100744F84 /* main.m */; };
+		2EC7F23F1D9F36D100744F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7F23E1D9F36D100744F84 /* AppDelegate.m */; };
+		2EC7F2421D9F36D100744F84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7F2411D9F36D100744F84 /* ViewController.m */; };
+		2EC7F2451D9F36D100744F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7F2431D9F36D100744F84 /* Main.storyboard */; };
+		2EC7F2471D9F36D100744F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7F2461D9F36D100744F84 /* Assets.xcassets */; };
+		2EC7F24A1D9F36D100744F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7F2481D9F36D100744F84 /* LaunchScreen.storyboard */; };
+		2EC7F2531D9F398500744F84 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7F2521D9F398500744F84 /* CoreBluetooth.framework */; };
+		2EF53D2C1DCA3C2D00F1DB5A /* DTColorPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53D291DCA3C2D00F1DB5A /* DTColorPickerImageView.m */; };
+		2EF53D2D1DCA3C2D00F1DB5A /* UIImage+ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53D2B1DCA3C2D00F1DB5A /* UIImage+ColorPicker.m */; };
+		2EF53D331DCA3FE200F1DB5A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC7F2591D9F47E900744F84 /* NotificationCenter.framework */; };
+		2EF53D371DCA3FE200F1DB5A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF53D361DCA3FE200F1DB5A /* TodayViewController.m */; };
+		2EF53D3A1DCA3FE200F1DB5A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF53D381DCA3FE200F1DB5A /* MainInterface.storyboard */; };
+		2EF53D3E1DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2EF53D321DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E26DC4A1DCB8AB600419A2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC7F22F1D9F36D000744F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E26DC471DCB8AB600419A2B;
+			remoteInfo = "Playbulb Controller Watch Extension";
+		};
+		2E26DC561DCB8AB600419A2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC7F22F1D9F36D000744F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E26DC3B1DCB8AB600419A2B;
+			remoteInfo = "Playbulb Controller Watch";
+		};
+		2EF53D3C1DCA3FE200F1DB5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EC7F22F1D9F36D000744F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EF53D311DCA3FE200F1DB5A;
+			remoteInfo = "Playbulb Controller Today Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E26DC5C1DCB8AB600419A2B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E26DC491DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E26DC601DCB8AB600419A2B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2E26DC581DCB8AB600419A2B /* Playbulb Controller Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC7F2691D9F47E900744F84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2EF53D3E1DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E26DC361DCB7CA900419A2B /* PBCPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCPeripheralManager.h; sourceTree = "<group>"; };
+		2E26DC371DCB7CA900419A2B /* PBCPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBCPeripheralManager.m; sourceTree = "<group>"; };
+		2E26DC3C1DCB8AB600419A2B /* Playbulb Controller Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playbulb Controller Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E26DC3F1DCB8AB600419A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2E26DC411DCB8AB600419A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E26DC431DCB8AB600419A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E26DC481DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Playbulb Controller Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E26DC4D1DCB8AB600419A2B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		2E26DC4E1DCB8AB600419A2B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		2E26DC501DCB8AB600419A2B /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		2E26DC511DCB8AB600419A2B /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		2E26DC531DCB8AB600419A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E26DC551DCB8AB600419A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E26DC621DCB92D300419A2B /* WatchSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSessionManager.h; sourceTree = "<group>"; };
+		2E26DC631DCB92D300419A2B /* WatchSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSessionManager.m; sourceTree = "<group>"; };
+		2E26DC651DCB93F900419A2B /* WatchSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSessionManager.h; sourceTree = "<group>"; };
+		2E26DC661DCB93F900419A2B /* WatchSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSessionManager.m; sourceTree = "<group>"; };
+		2E48443E1DCCD61900A106A2 /* PBCPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBCPrefix.pch; sourceTree = "<group>"; };
+		2E749DF41DC7840300DA140B /* CBPeripheral+SW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+SW.h"; sourceTree = "<group>"; };
+		2E749DF51DC7840300DA140B /* CBPeripheral+SW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+SW.m"; sourceTree = "<group>"; };
+		2E749DF71DC7891300DA140B /* PBCColorSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCColorSelectionViewController.h; sourceTree = "<group>"; };
+		2E749DF81DC7891300DA140B /* PBCColorSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBCColorSelectionViewController.m; sourceTree = "<group>"; };
+		2E749DFA1DC78C4A00DA140B /* PBCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCColor.h; sourceTree = "<group>"; };
+		2E749DFB1DC78C4A00DA140B /* PBCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBCColor.m; sourceTree = "<group>"; };
+		2EC7F2371D9F36D100744F84 /* Playbulb Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playbulb Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EC7F23B1D9F36D100744F84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EC7F23D1D9F36D100744F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EC7F23E1D9F36D100744F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EC7F2401D9F36D100744F84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EC7F2411D9F36D100744F84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EC7F2441D9F36D100744F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EC7F2461D9F36D100744F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EC7F2491D9F36D100744F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EC7F24B1D9F36D100744F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC7F2521D9F398500744F84 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2EC7F2591D9F47E900744F84 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2EF53D281DCA3C2D00F1DB5A /* DTColorPickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTColorPickerImageView.h; sourceTree = "<group>"; };
+		2EF53D291DCA3C2D00F1DB5A /* DTColorPickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTColorPickerImageView.m; sourceTree = "<group>"; };
+		2EF53D2A1DCA3C2D00F1DB5A /* UIImage+ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorPicker.h"; sourceTree = "<group>"; };
+		2EF53D2B1DCA3C2D00F1DB5A /* UIImage+ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorPicker.m"; sourceTree = "<group>"; };
+		2EF53D321DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Playbulb Controller Today Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF53D351DCA3FE200F1DB5A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		2EF53D361DCA3FE200F1DB5A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		2EF53D391DCA3FE200F1DB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2EF53D3B1DCA3FE200F1DB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E26DC451DCB8AB600419A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC7F2341D9F36D100744F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC7F2531D9F398500744F84 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF53D2F1DCA3FE200F1DB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF53D331DCA3FE200F1DB5A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E26DC3D1DCB8AB600419A2B /* Playbulb Controller Watch */ = {
+			isa = PBXGroup;
+			children = (
+				2E26DC3E1DCB8AB600419A2B /* Interface.storyboard */,
+				2E26DC411DCB8AB600419A2B /* Assets.xcassets */,
+				2E26DC431DCB8AB600419A2B /* Info.plist */,
+			);
+			path = "Playbulb Controller Watch";
+			sourceTree = "<group>";
+		};
+		2E26DC4C1DCB8AB600419A2B /* Playbulb Controller Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E26DC4D1DCB8AB600419A2B /* InterfaceController.h */,
+				2E26DC4E1DCB8AB600419A2B /* InterfaceController.m */,
+				2E26DC501DCB8AB600419A2B /* ExtensionDelegate.h */,
+				2E26DC511DCB8AB600419A2B /* ExtensionDelegate.m */,
+				2E26DC621DCB92D300419A2B /* WatchSessionManager.h */,
+				2E26DC631DCB92D300419A2B /* WatchSessionManager.m */,
+				2E26DC531DCB8AB600419A2B /* Assets.xcassets */,
+				2E26DC551DCB8AB600419A2B /* Info.plist */,
+			);
+			path = "Playbulb Controller Watch Extension";
+			sourceTree = "<group>";
+		};
+		2EC7F22E1D9F36D000744F84 = {
+			isa = PBXGroup;
+			children = (
+				2EC7F2391D9F36D100744F84 /* Playbulb Controller */,
+				2EF53D341DCA3FE200F1DB5A /* Playbulb Controller Today Widget */,
+				2E26DC3D1DCB8AB600419A2B /* Playbulb Controller Watch */,
+				2E26DC4C1DCB8AB600419A2B /* Playbulb Controller Watch Extension */,
+				2EC7F2381D9F36D100744F84 /* Products */,
+				2EC7F2511D9F398500744F84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EC7F2381D9F36D100744F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7F2371D9F36D100744F84 /* Playbulb Controller.app */,
+				2EF53D321DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex */,
+				2E26DC3C1DCB8AB600419A2B /* Playbulb Controller Watch.app */,
+				2E26DC481DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EC7F2391D9F36D100744F84 /* Playbulb Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EF53D271DCA3C1E00F1DB5A /* ColorPicker */,
+				2EC7F23D1D9F36D100744F84 /* AppDelegate.h */,
+				2EC7F23E1D9F36D100744F84 /* AppDelegate.m */,
+				2EC7F2401D9F36D100744F84 /* ViewController.h */,
+				2EC7F2411D9F36D100744F84 /* ViewController.m */,
+				2E749DF71DC7891300DA140B /* PBCColorSelectionViewController.h */,
+				2E749DF81DC7891300DA140B /* PBCColorSelectionViewController.m */,
+				2E749DFA1DC78C4A00DA140B /* PBCColor.h */,
+				2E749DFB1DC78C4A00DA140B /* PBCColor.m */,
+				2E749DF41DC7840300DA140B /* CBPeripheral+SW.h */,
+				2E749DF51DC7840300DA140B /* CBPeripheral+SW.m */,
+				2E26DC361DCB7CA900419A2B /* PBCPeripheralManager.h */,
+				2E26DC371DCB7CA900419A2B /* PBCPeripheralManager.m */,
+				2E26DC651DCB93F900419A2B /* WatchSessionManager.h */,
+				2E26DC661DCB93F900419A2B /* WatchSessionManager.m */,
+				2EC7F2431D9F36D100744F84 /* Main.storyboard */,
+				2EC7F2461D9F36D100744F84 /* Assets.xcassets */,
+				2EC7F2481D9F36D100744F84 /* LaunchScreen.storyboard */,
+				2EC7F24B1D9F36D100744F84 /* Info.plist */,
+				2EC7F23A1D9F36D100744F84 /* Supporting Files */,
+			);
+			path = "Playbulb Controller";
+			sourceTree = "<group>";
+		};
+		2EC7F23A1D9F36D100744F84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7F23B1D9F36D100744F84 /* main.m */,
+				2E48443E1DCCD61900A106A2 /* PBCPrefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EC7F2511D9F398500744F84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EC7F2521D9F398500744F84 /* CoreBluetooth.framework */,
+				2EC7F2591D9F47E900744F84 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EF53D271DCA3C1E00F1DB5A /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2EF53D281DCA3C2D00F1DB5A /* DTColorPickerImageView.h */,
+				2EF53D291DCA3C2D00F1DB5A /* DTColorPickerImageView.m */,
+				2EF53D2A1DCA3C2D00F1DB5A /* UIImage+ColorPicker.h */,
+				2EF53D2B1DCA3C2D00F1DB5A /* UIImage+ColorPicker.m */,
+			);
+			name = ColorPicker;
+			sourceTree = "<group>";
+		};
+		2EF53D341DCA3FE200F1DB5A /* Playbulb Controller Today Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2EF53D351DCA3FE200F1DB5A /* TodayViewController.h */,
+				2EF53D361DCA3FE200F1DB5A /* TodayViewController.m */,
+				2EF53D381DCA3FE200F1DB5A /* MainInterface.storyboard */,
+				2EF53D3B1DCA3FE200F1DB5A /* Info.plist */,
+			);
+			path = "Playbulb Controller Today Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E26DC3B1DCB8AB600419A2B /* Playbulb Controller Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E26DC5D1DCB8AB600419A2B /* Build configuration list for PBXNativeTarget "Playbulb Controller Watch" */;
+			buildPhases = (
+				2E26DC3A1DCB8AB600419A2B /* Resources */,
+				2E26DC5C1DCB8AB600419A2B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E26DC4B1DCB8AB600419A2B /* PBXTargetDependency */,
+			);
+			name = "Playbulb Controller Watch";
+			productName = "Playbulb Controller Watch";
+			productReference = 2E26DC3C1DCB8AB600419A2B /* Playbulb Controller Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2E26DC471DCB8AB600419A2B /* Playbulb Controller Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E26DC591DCB8AB600419A2B /* Build configuration list for PBXNativeTarget "Playbulb Controller Watch Extension" */;
+			buildPhases = (
+				2E26DC441DCB8AB600419A2B /* Sources */,
+				2E26DC451DCB8AB600419A2B /* Frameworks */,
+				2E26DC461DCB8AB600419A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Playbulb Controller Watch Extension";
+			productName = "Playbulb Controller Watch Extension";
+			productReference = 2E26DC481DCB8AB600419A2B /* Playbulb Controller Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		2EC7F2361D9F36D100744F84 /* Playbulb Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC7F24E1D9F36D100744F84 /* Build configuration list for PBXNativeTarget "Playbulb Controller" */;
+			buildPhases = (
+				2EC7F2331D9F36D100744F84 /* Sources */,
+				2EC7F2341D9F36D100744F84 /* Frameworks */,
+				2EC7F2351D9F36D100744F84 /* Resources */,
+				2EC7F2691D9F47E900744F84 /* Embed App Extensions */,
+				2E26DC601DCB8AB600419A2B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EF53D3D1DCA3FE200F1DB5A /* PBXTargetDependency */,
+				2E26DC571DCB8AB600419A2B /* PBXTargetDependency */,
+			);
+			name = "Playbulb Controller";
+			productName = "Playbulb Controller";
+			productReference = 2EC7F2371D9F36D100744F84 /* Playbulb Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EF53D311DCA3FE200F1DB5A /* Playbulb Controller Today Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EF53D3F1DCA3FE200F1DB5A /* Build configuration list for PBXNativeTarget "Playbulb Controller Today Widget" */;
+			buildPhases = (
+				2EF53D2E1DCA3FE200F1DB5A /* Sources */,
+				2EF53D2F1DCA3FE200F1DB5A /* Frameworks */,
+				2EF53D301DCA3FE200F1DB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Playbulb Controller Today Widget";
+			productName = "Playbulb Controller Today Widget";
+			productReference = 2EF53D321DCA3FE200F1DB5A /* Playbulb Controller Today Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EC7F22F1D9F36D000744F84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Pat Sluth";
+				TargetAttributes = {
+					2E26DC3B1DCB8AB600419A2B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KZ3284WPA2;
+						ProvisioningStyle = Automatic;
+					};
+					2E26DC471DCB8AB600419A2B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KZ3284WPA2;
+						ProvisioningStyle = Automatic;
+					};
+					2EC7F2361D9F36D100744F84 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KZ3284WPA2;
+						ProvisioningStyle = Automatic;
+					};
+					2EF53D311DCA3FE200F1DB5A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KZ3284WPA2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2EC7F2321D9F36D000744F84 /* Build configuration list for PBXProject "Playbulb Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EC7F22E1D9F36D000744F84;
+			productRefGroup = 2EC7F2381D9F36D100744F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EC7F2361D9F36D100744F84 /* Playbulb Controller */,
+				2EF53D311DCA3FE200F1DB5A /* Playbulb Controller Today Widget */,
+				2E26DC3B1DCB8AB600419A2B /* Playbulb Controller Watch */,
+				2E26DC471DCB8AB600419A2B /* Playbulb Controller Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E26DC3A1DCB8AB600419A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E26DC421DCB8AB600419A2B /* Assets.xcassets in Resources */,
+				2E26DC401DCB8AB600419A2B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E26DC461DCB8AB600419A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E26DC541DCB8AB600419A2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC7F2351D9F36D100744F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC7F24A1D9F36D100744F84 /* LaunchScreen.storyboard in Resources */,
+				2EC7F2471D9F36D100744F84 /* Assets.xcassets in Resources */,
+				2EC7F2451D9F36D100744F84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF53D301DCA3FE200F1DB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF53D3A1DCA3FE200F1DB5A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E26DC441DCB8AB600419A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E26DC521DCB8AB600419A2B /* ExtensionDelegate.m in Sources */,
+				2E26DC4F1DCB8AB600419A2B /* InterfaceController.m in Sources */,
+				2E26DC641DCB92D300419A2B /* WatchSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EC7F2331D9F36D100744F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E26DC671DCB93F900419A2B /* WatchSessionManager.m in Sources */,
+				2EC7F2421D9F36D100744F84 /* ViewController.m in Sources */,
+				2EF53D2D1DCA3C2D00F1DB5A /* UIImage+ColorPicker.m in Sources */,
+				2E26DC381DCB7CA900419A2B /* PBCPeripheralManager.m in Sources */,
+				2EC7F23F1D9F36D100744F84 /* AppDelegate.m in Sources */,
+				2E749DF91DC7891300DA140B /* PBCColorSelectionViewController.m in Sources */,
+				2E749DF61DC7840300DA140B /* CBPeripheral+SW.m in Sources */,
+				2EC7F23C1D9F36D100744F84 /* main.m in Sources */,
+				2EF53D2C1DCA3C2D00F1DB5A /* DTColorPickerImageView.m in Sources */,
+				2E749DFC1DC78C4A00DA140B /* PBCColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF53D2E1DCA3FE200F1DB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF53D371DCA3FE200F1DB5A /* TodayViewController.m in Sources */,
+				2E26DC391DCB87ED00419A2B /* PBCPeripheralManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E26DC4B1DCB8AB600419A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E26DC471DCB8AB600419A2B /* Playbulb Controller Watch Extension */;
+			targetProxy = 2E26DC4A1DCB8AB600419A2B /* PBXContainerItemProxy */;
+		};
+		2E26DC571DCB8AB600419A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E26DC3B1DCB8AB600419A2B /* Playbulb Controller Watch */;
+			targetProxy = 2E26DC561DCB8AB600419A2B /* PBXContainerItemProxy */;
+		};
+		2EF53D3D1DCA3FE200F1DB5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EF53D311DCA3FE200F1DB5A /* Playbulb Controller Today Widget */;
+			targetProxy = 2EF53D3C1DCA3FE200F1DB5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E26DC3E1DCB8AB600419A2B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E26DC3F1DCB8AB600419A2B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		2EC7F2431D9F36D100744F84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC7F2441D9F36D100744F84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EC7F2481D9F36D100744F84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC7F2491D9F36D100744F84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2EF53D381DCA3FE200F1DB5A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EF53D391DCA3FE200F1DB5A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E26DC5A1DCB8AB600419A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2E26DC5B1DCB8AB600419A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2E26DC5E1DCB8AB600419A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				IBSC_MODULE = Playbulb_Controller_Watch_Extension;
+				INFOPLIST_FILE = "Playbulb Controller Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		2E26DC5F1DCB8AB600419A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				IBSC_MODULE = Playbulb_Controller_Watch_Extension;
+				INFOPLIST_FILE = "Playbulb Controller Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		2EC7F24C1D9F36D100744F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Playbulb Controller/PBCPrefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EC7F24D1D9F36D100744F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Playbulb Controller/PBCPrefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EC7F24F1D9F36D100744F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EC7F2501D9F36D100744F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2EF53D401DCA3FE200F1DB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller Today Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.Playbulb-Controller-Today-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2EF53D411DCA3FE200F1DB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KZ3284WPA2;
+				INFOPLIST_FILE = "Playbulb Controller Today Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "patsluth.Playbulb-Controller.Playbulb-Controller-Today-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E26DC591DCB8AB600419A2B /* Build configuration list for PBXNativeTarget "Playbulb Controller Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E26DC5A1DCB8AB600419A2B /* Debug */,
+				2E26DC5B1DCB8AB600419A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E26DC5D1DCB8AB600419A2B /* Build configuration list for PBXNativeTarget "Playbulb Controller Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E26DC5E1DCB8AB600419A2B /* Debug */,
+				2E26DC5F1DCB8AB600419A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC7F2321D9F36D000744F84 /* Build configuration list for PBXProject "Playbulb Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC7F24C1D9F36D100744F84 /* Debug */,
+				2EC7F24D1D9F36D100744F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC7F24E1D9F36D100744F84 /* Build configuration list for PBXNativeTarget "Playbulb Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EC7F24F1D9F36D100744F84 /* Debug */,
+				2EC7F2501D9F36D100744F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EF53D3F1DCA3FE200F1DB5A /* Build configuration list for PBXNativeTarget "Playbulb Controller Today Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF53D401DCA3FE200F1DB5A /* Debug */,
+				2EF53D411DCA3FE200F1DB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EC7F22F1D9F36D000744F84 /* Project object */;
+}
